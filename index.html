@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="scripts/scripts_update.js"></script>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="box">
+      <div class="title">
+        <h1>Rock, Paper, Scissors</h1>
+        <button class="main" onclick="remove_dis()">Begin</button>
+      </div>
+      <div class="myplay">
+        <h2>Your choice</h2>
+        <div class="choose_tools">
+          <button
+            disabled
+            id="rock"
+            class="pl_option"
+            onclick="pressed(value)"
+            value="Rock"
+          >
+            Rock 🪨
+          </button>
+          <button
+            disabled
+            id="paper"
+            class="pl_option"
+            onclick="pressed(value)"
+            value="Paper"
+          >
+            Paper 📄
+          </button>
+          <button
+            disabled
+            id="scissors"
+            class="pl_option"
+            onclick="pressed(value)"
+            value="Scissors"
+          >
+            Scissors ✂️
+          </button>
+        </div>
+      </div>
+      <div class="final_res">
+        <div class="round">Round: <span id="round">0</span></div>
+        <div class="players">
+          Player: <span id="player_count">0</span> Computer:
+          <span id="comp_count">0</span>
+        </div>
+      </div>
+      <div id="whowon"></div>
+    </div>
+  </body>
+</html>
